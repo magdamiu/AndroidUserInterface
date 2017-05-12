@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Android User Interface</string>
+    <string name="text_main">This is a simple example for TextView</string>
+    <string name="get_text">Get Text</string>
+    <string name="get_status">Get Status</string>
+    <string name="question">How is to develop Android apps?</string>
+    <string name="great">Great</string>
+    <string name="awesome">Awesome</string>
+    <string name="good">Good</string>
+    <string name="switch_text">Play with the Switch</string>
+    <string name="seekbar_text">Play with the SeekBar</string>
+    <string name="searchbar_text">Play with the SearchBar</string>
+</resources>

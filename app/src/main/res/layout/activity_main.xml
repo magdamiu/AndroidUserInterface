@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="magdamiu.com.androiduserinterface.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="@string/text_main"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/activity_horizontal_margin" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:inputType="textEmailAddress" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+            <Button
+                android:id="@+id/btn_get_value"
+                android:layout_width="100dip"
+                android:layout_height="50dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@color/colorAccent"
+                android:onClick="getValue_onClick"
+                android:text="@string/get_text"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tv_value"
+                android:textStyle="italic"
+                android:textSize="@dimen/text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher" />
+
+            <CheckBox
+                android:id="@+id/cb_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="@string/question"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/androidRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@android:color/holo_green_light"
+            android:checkedButton="@+id/sound">
+
+            <RadioButton
+                android:id="@+id/rb_good"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/good" />
+
+            <RadioButton
+                android:id="@+id/rb_great"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/great" />
+
+            <RadioButton
+                android:id="@+id/rb_awesome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/awesome" />
+
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+            <Button
+                android:id="@+id/bt_get_status"
+                android:layout_width="100dip"
+                android:layout_height="50dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@color/colorAccent"
+                android:onClick="getStatus_onClick"
+                android:text="@string/get_status"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_toRightOf="@+id/bt_get_status"
+                android:id="@+id/tv_status"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+
+        <Switch
+            android:id="@+id/sw_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/switch_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="@string/seekbar_text" />
+
+        <SeekBar
+            android:id="@+id/sb_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:max="100" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="@string/searchbar_text" />
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+            <Button
+                android:id="@+id/bt_get_the_values"
+                android:layout_width="100dip"
+                android:layout_height="50dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@color/colorAccent"
+                android:onClick="getValues_onClick"
+                android:text="@string/get_status"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_toRightOf="@+id/bt_get_the_values"
+                android:id="@+id/tv_values"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
