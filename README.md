@@ -4,6 +4,7 @@ This repository contains some basic UI elements from Android.
 <ul>
 <li>TextView</li>
 <li>EditText</li>
+<li>ImageView</li>
 <li>CheckBox</li>
 <li>Button</li>
 <li>RadioButton</li>
